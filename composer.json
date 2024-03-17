@@ -1,0 +1,20 @@
+{
+  "name": "mageleon/module-review-graph-ql",
+  "version": "1.0.0",
+  "description": "GraphQL query that allows us to retrieve the latest product review data for a given product id",
+  "type": "magento2-module",
+  "require": {
+      "php": "~8.1.0||~8.2.0",
+      "magento/framework": "103.0.*",
+      "magento/module-review": "100.4.*",
+      "magento/module-graph-ql": "100.4.*"
+  },
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Mageleon\\ReviewGraphQl\\": ""
+    }
+  }
+}

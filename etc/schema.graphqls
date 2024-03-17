@@ -1,0 +1,13 @@
+type Query {
+    last_product_review(
+        id: Int! @doc(description: "Specify the id of the product.")
+    ): reviewData @resolver( class: "Mageleon\\ReviewGraphQl\\Model\\Resolver\\Reviews") @doc(description: "Get list of reviews for the given product id.")
+}
+
+type reviewData {
+    review_id: String
+    created_at: String
+    title: String
+    detail: String
+    nickname:String
+}
